@@ -25,7 +25,7 @@ The goals / steps of this project are the following:
 [image4]: ./new_img/4.png
 [image5]: ./new_img/5.png
 [image5]: ./new_img/5.png
-[image6]: ./new_img/radius curve.PNG
+[image6]: ./new_img/rc.png
 
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
