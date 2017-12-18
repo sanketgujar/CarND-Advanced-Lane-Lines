@@ -68,15 +68,14 @@ I used a combination of color and gradient thresholds to generate a binary image
 ![alt text][image4]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
+The code for my perspective transform appears cell 35. The function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
 
-    The code for my perspective transform appears cell 35. The function takes as inputs an image (`img`), as well as source (`src`) and destination (`dst`) points.  I chose the hardcode the source and destination points in the following manner:
-
-```python
+    python
     pt1 = [w // 2 - 76, h* 0.625]
     pt2 = [w // 2 + 76, h * 0.625]
     pt3 = [-100, h]
     pt4 = [w + 100, h]
-    
+
     src = np.float32([pt1, pt2, pt3, pt4])
     
     dp1 = [100, 0]
@@ -84,7 +83,6 @@ I used a combination of color and gradient thresholds to generate a binary image
     dp3 = [100, h]
     dp4 = [w - 100, h]
     dst = np.float32([dp1, dp2, dp3, dp4])
-    ```
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
